@@ -45,7 +45,7 @@ You will have the option to choose where you want to participate and compete aga
 #### Submission - SBFT@ICSE
 
 The submission details for [SBFT@ICSE](https://search-based-and-fuzz-testing.github.io/sbft26/) participants are as follows:
-- **Submission Deadline**: 31.11.2025 (AoE)
+- **Submission Deadline**: 07.12.2025 (AoE)
 - **Notification**: 22.12.2025 (AoE)
 
 #### Submission - ICST
