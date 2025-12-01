@@ -29,6 +29,10 @@ The competition report and the ranking is out. Here is the overal ranking, while
 | [TAIiST](https://github.com/Trusted-AI-in-System-Test/UAV-Testing-Competition)        | [2-4]      | 7   | 0,81  | 13  | 0,00  | 6   | 0,43  | 11  | 1,57  | 29  | 1,67  | 22  | 1,33  | 33        | 5,81       | 7           |
 | **SUM**                                                                               |            | 215 | 34,40 | 303 | 48,39 | 311 | 18,51 | 263 | 18,91 | 530 | 48,67 | 305 | 33,19 |           |            |             |
 
+## Important Updates (1.12.2025)
+
+- **The submission deadline for [SBFT@ICSE](https://search-based-and-fuzz-testing.github.io/sbft26/) has been extended to 7.12.2025 (AoE) to give participants additional time to improve their methods.**
+
 ## Important Updates (8.12.2023)
 
 - **Due to multiple requests, we are implementing a grace period. You can update your submissions until 10.12.2023 (AoE).**

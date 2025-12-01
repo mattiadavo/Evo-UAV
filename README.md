@@ -37,6 +37,11 @@ The UAV Testing Competition organized jointly by the [International Conference o
 
 *The UAV Testing competition is back on for a 3<sup>rd</sup> Edition at SBFT@ICSE and at ICST 2026!*
 
+### SBFT Deadline Extension
+
+The submission deadline for [SBFT@ICSE](https://search-based-and-fuzz-testing.github.io/sbft26/) has been extended to 7.12.2025 (AoE).
+
+
 ### Competition Call
 
 The competition call, guidelines, and evaluation, are identical for the two calls.
@@ -45,7 +50,7 @@ You will have the option to choose where you want to participate and compete aga
 #### Submission - SBFT@ICSE
 
 The submission details for [SBFT@ICSE](https://search-based-and-fuzz-testing.github.io/sbft26/) participants are as follows:
-- **Submission Deadline**: 31.11.2025 (AoE)
+- **Submission Deadline**: ~~30.11.2025~~ 07.11.2025 (AoE)
 - **Notification**: 22.12.2025 (AoE)
 
 #### Submission - ICST
