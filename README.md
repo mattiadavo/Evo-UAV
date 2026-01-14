@@ -431,11 +431,10 @@ Feel free to use the [Discussions](https://github.com/skhatiri/UAV-Testing-Compe
 
 You can also contact us directly using email:
 
-- Sajad Khatiri (University of Bern) - <sajad.mazraehkhatiri@unibe.ch>
-- Prasun Saurabh (Università della Svizzera italiana) - <saurap@usi.ch>
-- Ali Javadi (University of Bern) - <ali.javadi@unibe.ch>
-- Ramazan Erdem Uysal (University of Bern) - <ramazan.uysal@unibe.ch>
-- Dmytro Humeniuk (École Polytechnique de Montréal) - <dmytro.humeniuk@polymtl.ca>
--	Prakash Aryan (University of Bern) - <prakash.aryan@unibe.ch>
--	Aren Babikian (University of toronto) - <babikian@utoronto.edu>
-- Sebastiano Panichella (University of Bern) - <spanichella@gmail.com>
+- Ramazan Erdem Uysal, University of Bern, ramazan.uysal@unibe.ch
+- Ali Javadi, University of Bern, ali.javadi@unibe.ch, 
+- Prakash Aryan, University of Bern, prakash.aryan@unibe.ch
+- Aren Babikian, University of Toronto, aren.babikian@utoronto.ca
+- Dmytro Humeniuk, Polytechnique Montréal, dmytro.humeniuk@polymtl.ca, 
+- Sajad Mazraehkhatiri, University of Bern, sajad.mazraehkhatiri@unibe.ch
+- Sebastiano Panichella, University of Bern, sebastiano.panichella@unibe.ch
