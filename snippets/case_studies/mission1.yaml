@@ -28,8 +28,8 @@ simulation:
   #     r: 0
 
   wind:
-    velocity_mean: 3
-    velocity_max: 5.0
+    velocity_mean: 4
+    velocity_max: 6.0
     direction: [1, 0, 0]
 
 test:
