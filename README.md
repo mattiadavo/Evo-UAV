@@ -387,15 +387,24 @@ If you use this tool in your research, please cite the following papers:
   }
   ````
 
-- **Sajad Khatiri**, Prasun Saurabh, Timothy Zimmermann, Charith Munasinghe, Christian Birchler, and Sebastiano Panichella, "SBFT Tool Competition 2024 - CPS-UAV Test Case Generation Track," *In 2024 IEEE/ACM International Workshop on Search-Based and Fuzz Testing*. [Link](reports/UAV_Competition_SBFT_2024.pdf).
-
+- **SBFT Tool competition report** 
   ````{code-block} bibtex
-  @inproceedings{SBFT-UAV2024,
-    author       = {Sajad Khatiri and Prasun Saurabh and Timothy Zimmermann and Charith Munasinghe and Christian Birchler and Sebastiano Panichella},
-    title        = {{SBFT} Tool Competition 2024 - CPS-UAV Test Case Generation Track},
-    booktitle    = {{IEEE/ACM} International Workshop on Search-Based and Fuzz Testing,
-                    SBFT@ICSE 2024},
-    year         = {2024}
+  @inproceedings{SBFT-UAV2026,
+    author       = {Ramazan Erdem Uysal and Ali Javadi and Prakash Aryan and Aren Babikian and  Dmytro Humeniuk and  Sajad Mazraehkhatiri and  Sebastiano Panichella},
+    title        = {{SBFT} Tool Competition 2026 – UAV Testing Track},
+    booktitle    = {International Workshop on Search-Based and Fuzz Testing,
+                    SBFT@ICSE 2026},
+    year         = {2026}
+  }
+  ````
+
+  - **ICST Tool competition report** 
+  ````{code-block} bibtex
+  @inproceedings{ICST-UAV2026,
+    author       = {Ramazan Erdem Uysal and Ali Javadi and Prakash Aryan and Aren Babikian and  Dmytro Humeniuk and  Sajad Mazraehkhatiri and  Sebastiano Panichella},
+    title        = {{ICST} Tool Competition 2026 – UAV Testing Track},
+    booktitle    = {International Conference on Software Testing, Verification and Validation (ICST)},
+    year         = {2026}
   }
   ````
 
