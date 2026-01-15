@@ -27,10 +27,10 @@ simulation:
   #     z: 0
   #     r: 0
 
-  wind:
-    velocity_mean: 8
-    velocity_max: 10.0
-    direction: [1, 0, 0]
+#  wind:
+#    velocity_mean: 8
+#    velocity_max: 10.0
+#    direction: [1, 0, 0]
 
 test:
   commands_file: case_studies/mission-commands.csv
