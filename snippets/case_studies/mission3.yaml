@@ -27,10 +27,10 @@ simulation:
   #     z: 0
   #     r: 0
 
-  wind:
-    velocity_mean: 12
-    velocity_max: 14.0
-    direction: [1, 0, 0]
+#  wind:
+#    velocity_mean: 12
+#    velocity_max: 14.0
+#    direction: [1, 0, 0]
 
 
 test:
