@@ -5,7 +5,7 @@ These case studies include a predefined flight mission, relevant drone configura
 
 The test generators are then expected to place obstacles in the simulation environment, inside a predefined area as shown in the below image. **For simplicity, we keep this area fixed for all the case studies (-40<x<30, 10<y<40).**
 
-![obstacles area](mission2-borders.png)
+![obstacles area](../../figures/mission2-borders.png)
 
 Following, there are some sample case studies. you can find their 'YAML' files, as well as sample flight logs in this folder. 
 For each case study, the flight trajectory for two settings are ploted as examples: first withouth any obstacles, and then with two sample obstacles.
