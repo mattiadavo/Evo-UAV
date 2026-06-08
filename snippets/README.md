@@ -48,7 +48,7 @@ sudo docker exec -it [YOUR_CONTAINER_NAME] bash
 
 ### 4. Run the generator
 ```bash
-python3 cli.py generate <CASE_STUDY_FILE> <BUDGET>
+python3 cli.py generate [PATH_TO_MISSION_YAML] [BUDGET]
 ```
 
 ### 5. Retrieve the results
@@ -68,7 +68,7 @@ Then install the dependencies and run the same command:
 ```bash
 pip3 install git+https://github.com/skhatiri/Aerialist.git
 pip3 install -r requirements.txt
-python3 cli.py generate <CASE_STUDY_FILE> <BUDGET>
+python3 cli.py generate [PATH_TO_MISSION_YAML] [BUDGET]
 
 ```
 
