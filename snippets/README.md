@@ -1,14 +1,79 @@
-# Developing Your Own Test Generator
+# Evo
 
-You can integrate Aerialist's python package in your own code and directly define and execute UAV test cases with it.
-This can be speccifically useful when you are working on test generation approaches for UAVs. An example of such usage of Aerialist can be found in [Surrealist](https://github.com/skhatiri/Surrealist).
 
-1. `pip3 install git+https://github.com/skhatiri/Aerialist.git`
-2. We suggest you first experiment with the Docker Agent
-    - Make sure you are able to run test cases inside docker [using your client CLI](https://github.com/skhatiri/Aerialist#using-hosts-cli)
-3. Check [TestCase](testcase.py) class for a simple implementation for defining and executing test cases.
-4. Check [RandomGenerator](random_generator.py) class for a simple test generator that puts an obstacle with random size and position inside a givent case study mission.
-5. Check [CLI](cli.py) for a sample Command Line Interface to invoke your code.
-6. Check [Dockerfile](Dockerfile) for a proper way to dockerize your code.
-7. Develop your own test genrator based on the above samples. You can clone this repository and re-use all classes and case studies.
-8. Feel free to use the [discussion section]((https://github.com/skhatiri/UAV-Testing-Competition/discussions)) or contact the organizers to ask your questions.
+## Overview
+
+Evo is an automated UAV test-generation system built on top of
+[Aerialist](https://github.com/skhatiri/Aerialist).
+Its goal is to find obstacle configurations that make the PX4
+obstacle-avoidance system fail.
+
+Instead of sampling obstacles blindly across the whole map, Evo combines a
+**trajectory-aware geometric pre-filter** with an **seeds-based evolutionary
+search**:
+
+- **Trajectory-aware pre-filter.** The planned mission trajectory is reconstructed
+  from the `.plan` file, and only obstacle configurations whose obstacles fall
+  close to the flight path are kept.
+- **Seed model.** The budget is split across several independent seeds, each
+  optimising its own configuration (optionally anchored to a different segment of
+  the trajectory). This keeps the final test suite **diverse**, which is rewarded
+  by the competition's diversity score.
+- **Evolutionary search.** Each seed starts from a valid configuration and evolves
+  it through mutations (position, size, rotation), keeping a child only when its
+  fitness improves.
+
+Only the challenging test cases (min distance `< 1.5 m`) are reported, ranked by
+danger first and by fewer obstacles second.
+
+## Installation and Usage
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/mattiadavo/Evo-UAV
+cd Evo-UAV/snippets
+```
+
+### 2. Create a Docker Image:
+
+```bash
+sudo docker build -t [YOUR_IMAGE_NAME] .
+```
+
+### 3. Start a container and open a shell
+```bash
+sudo docker run -dit --name [YOUR_CONTAINER_NAME] [YOUR_IMAGE_NAME]
+sudo docker exec -it [YOUR_CONTAINER_NAME] bash
+```
+
+### 4. Run the generator
+```bash
+python3 cli.py generate <CASE_STUDY_FILE> <BUDGET>
+```
+
+### 5. Retrieve the results
+The generated tests are written inside the container inside
+`generated_tests/`
+```bash
+sudo docker cp [YOUR_CONTAINER_NAME]:/src/generator/generated_tests ./generated_tests
+```
+
+### Running locally 
+This requires the full Aerialist + PX4 + ROS + Gazebo stack already installed on
+the machine. Copy the environment template:
+```bash
+cp sample.env .env
+```
+Then install the dependencies and run the same command:
+```bash
+pip3 install git+https://github.com/skhatiri/Aerialist.git
+pip3 install -r requirements.txt
+python3 cli.py generate <CASE_STUDY_FILE> <BUDGET>
+
+```
+
+## Author
+
+- Mattia Davoli
+  - Email: `mattia.dav833@gmail.com`
+

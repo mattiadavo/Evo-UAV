@@ -40,6 +40,6 @@ test:
 #   log_file: samples/flights/mission3.ulg
 #   variable: trajectory
 
-# agent:
-#   engine: local # {k8s, docker, local}
-#   count: 1
+agent:
+  engine: local # {k8s, docker, local}
+  count: 1
