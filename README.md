@@ -8,13 +8,13 @@ Its goal is to find obstacle configurations that make the PX4
 obstacle-avoidance system fail.
 
 Instead of sampling obstacles blindly across the whole map, Evo combines a
-**trajectory-aware geometric pre-filter** with an **seeds-based evolutionary
+**trajectory-aware geometric pre-filter** with a **multi-seed evolutionary
 search**:
 
 - **Trajectory-aware pre-filter.** The planned mission trajectory is reconstructed
   from the `.plan` file, and only obstacle configurations whose obstacles fall
   close to the flight path are kept.
-- **Seed model.** The budget is split across several independent seeds, each
+- **multi seed.** The budget is split across several independent seeds, each
   optimising its own configuration (optionally anchored to a different segment of
   the trajectory). This keeps the final test suite **diverse**, which is rewarded
   by the competition's diversity score.
@@ -55,20 +55,6 @@ The generated tests are written inside the container inside
 `generated_tests/`
 ```bash
 sudo docker cp [YOUR_CONTAINER_NAME]:/src/generator/generated_tests ./generated_tests
-```
-
-### Running locally 
-This requires the full Aerialist + PX4 + ROS + Gazebo stack already installed on
-the machine. Copy the environment template:
-```bash
-cp sample.env .env
-```
-Then install the dependencies and run the same command:
-```bash
-pip3 install git+https://github.com/skhatiri/Aerialist.git
-pip3 install -r requirements.txt
-python3 cli.py generate [PATH_TO_MISSION_YAML] [BUDGET]
-
 ```
 
 ## Author
