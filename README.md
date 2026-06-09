@@ -54,7 +54,7 @@ python3 cli.py generate [PATH_TO_MISSION_YAML] [BUDGET]
 The generated tests are written inside the container inside
 `generated_tests/`
 ```bash
-sudo docker cp [YOUR_CONTAINER_NAME]:/src/generator/generated_tests ./generated_tests
+sudo docker cp [YOUR_CONTAINER_NAME]:/src/generated_tests ./generated_tests
 ```
 
 ## Author
