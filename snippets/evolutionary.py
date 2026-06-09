@@ -102,7 +102,7 @@ class ObstacleGenerator:
         size = Obstacle.Size(
             l=random.uniform(ObstacleGenerator.min_size.l, ObstacleGenerator.max_size.l),
             w=random.uniform(ObstacleGenerator.min_size.w, ObstacleGenerator.max_size.w),
-            h=random.uniform(ObstacleGenerator.min_size.h, ObstacleGenerator.max_size.h),
+            h=ObstacleGenerator.max_size.h,
         )
         position = Obstacle.Position(
             x=random.uniform(ObstacleGenerator.min_position.x, ObstacleGenerator.max_position.x),
