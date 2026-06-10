@@ -122,12 +122,8 @@ class ObstacleGenerator:
 
     @staticmethod
     def is_overlapping(obs1: Obstacle, obs2: Obstacle):
-        dx = obs1.position.x - obs2.position.x
-        dy = obs1.position.y - obs2.position.y
-        dist = math.hypot(dx, dy)
-        r1 = math.hypot(obs1.size.l, obs1.size.w) / 2.0
-        r2 = math.hypot(obs2.size.l, obs2.size.w) / 2.0
-        return dist < (r1 + r2)
+        return _obstacle_polygon(obs1).buffer(0.25).intersects(
+               _obstacle_polygon(obs2).buffer(0.25))
 
 
 def _clip(val, lo, hi):
